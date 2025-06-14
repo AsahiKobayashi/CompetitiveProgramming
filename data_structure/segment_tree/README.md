@@ -17,6 +17,8 @@ interface Monoid<T> {
     T e();           // 単位元（identity element）
 }
 
+```
+
 ---
 ## 使用例
 
