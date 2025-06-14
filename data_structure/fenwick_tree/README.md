@@ -1,4 +1,4 @@
-# 🌲 FenwickTree（Binary Indexed Tree）
+# FenwickTree（Binary Indexed Tree）
 
 ## 概要
 
