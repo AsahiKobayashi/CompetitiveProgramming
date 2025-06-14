@@ -1,3 +1,8 @@
+interface Monoid<T> {
+    T e();
+    T op(T a, T b);
+}
+
 class AbstractSqrtRootDecomposition<T> {
 
     int sqrt , size ;
