@@ -3,14 +3,12 @@ class UnionFindTree {
         private int [] parents , size;
         private int n ;
         private int groups;
-        private HashMap<Integer,List<Integer>> member;
     
         UnionFindTree(int n) {
             this.parents=new int[n];
             this.size=new int[n];
             this.groups=n;
             this.n = n ;
-            this.member = new HashMap<>();
             Arrays.fill(size , 1);
             Arrays.setAll(parents,i->i);
         }
