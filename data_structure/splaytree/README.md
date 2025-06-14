@@ -1,5 +1,6 @@
 ## 使用例
 ```java
+// 区間和を定義
 BinaryOperator<Integer> sumOp = Integer::sum;
 
 // ノードの初期値 (キー, 値)
