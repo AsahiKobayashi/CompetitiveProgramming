@@ -1,4 +1,4 @@
-static class UnionFindTree {
+class UnionFindTree {
 
         private int [] parents , size;
         private int n ;
