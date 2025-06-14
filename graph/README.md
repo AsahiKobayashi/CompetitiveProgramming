@@ -9,7 +9,7 @@
 - 計算量: O(E log V)
 
 ---
-# Floyd-Warshall法（ワーシャルフロイド法）
+# ワーシャルフロイド法（Floyd-Warshall's Algorithm）
 
 ## 概要
 
