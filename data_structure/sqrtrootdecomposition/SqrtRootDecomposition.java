@@ -3,7 +3,7 @@ interface Monoid<T> {
     T op(T a, T b);
 }
 
-class AbstractSqrtRootDecomposition<T> {
+class SqrtRootDecomposition<T> {
 
     int sqrt , size ;
     T [] data ;
@@ -11,7 +11,7 @@ class AbstractSqrtRootDecomposition<T> {
     Monoid<T> monoid ;
 
     @SuppressWarnings("unchecked")
-    AbstractSqrtRootDecomposition(int n , Monoid<T> monoid) {
+    SqrtRootDecomposition(int n , Monoid<T> monoid) {
         this.sqrt = 512 ;
         this.size = (n + sqrt - 1) / sqrt ;
         this.data = (T []) new Object[size * sqrt];
