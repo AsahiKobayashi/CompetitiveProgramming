@@ -1,4 +1,8 @@
- class SegmentTree<T> {
+interface Monoid<T> {
+    T e();
+    T op(T a, T b);
+}
+class SegmentTree<T> {
 
         private T [] tree;
         private int n;
