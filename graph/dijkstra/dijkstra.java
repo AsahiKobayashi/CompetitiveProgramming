@@ -1,11 +1,5 @@
 public record Edge(int to, long weight) {}
 
-/**
- * 指定した始点から任意の地点までの最短経路を取得 O (NlogN)
- * @param start 始点
- * @param graph グラフ
- * @return
- */
 public long[] dijkstra(int start, List<Edge>[] graph) {
     int n = graph.length;
     long[] dist = new long[n];
