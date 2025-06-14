@@ -44,13 +44,13 @@ class RangeSumMonoid implements MonoidAction<Long, Long> {
 ```
 ```java
 List<Long> list = Arrays.asList(1L, 2L, 3L, 4L, 5L);
-        RangeSumMonoid act = new RangeSumMonoid(list.size());
+RangeSumMonoid act = new RangeSumMonoid(list.size());
 
-        LazySegtree<Long, Long> seg = new LazySegtree<>(list, act);
+LazySegtree<Long, Long> seg = new LazySegtree<>(list, act);
 
-        System.out.println(seg.prod(0, 5)); // 出力: 15
+System.out.println(seg.prod(0, 5)); // 出力: 15
 
-        seg.apply(1, 4, 10L); // 区間[1,4)に+10
+seg.apply(1, 4, 10L); // 区間[1,4)に+10
 
-        System.out.println(seg.prod(0, 5)); // 出力: 15 + 30 = 45
-        System.out.println(seg.get(2));     // 出力: 13（3 + 10）
+System.out.println(seg.prod(0, 5)); // 出力: 15 + 30 = 45
+System.out.println(seg.get(2));     // 出力: 13（3 + 10）
