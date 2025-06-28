@@ -9,7 +9,7 @@ class Base {
     protected static final long MOD9 = 998_244_353;
     protected static final long MOD7 = 1_000_000_007;
 
-    public static <T> T[] wrap(Object array) {
+    protected static <T> T[] wrap(Object array) {
         Class<?> clazz = array.getClass().getComponentType();
         if (clazz == int.class) return (T[]) convert(array, Integer.class);
         if (clazz == long.class) return (T[]) convert(array, Long.class);
@@ -29,11 +29,11 @@ class Base {
         return newArray;
     }
 
-    public static final long ceil(long u,long d){ 
+    protected static final long ceil(long u,long d){ 
         return (u+d-1)/d; 
     }
     
-    public static final long sqrt(long x) { 
+    protected static final long sqrt(long x) { 
         long low=0,high=Math.min(x,1L<<32);
         while(low<=high){
             long mid=(low+high)>>>1;
