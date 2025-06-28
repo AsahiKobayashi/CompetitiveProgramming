@@ -1,9 +1,5 @@
-# Base Utility Class for Competitive Programming / Java Projects
-
-Javaで競技プログラミングや開発に便利な共通ユーティリティをまとめた基底クラス `Base` です(継承推奨)
-
+Javaで競技プログラミングや開発に便利な共通ユーティリティをまとめた基底クラス `Base` です (継承推奨)
 ---
-
 ## 概要
 
 - プリミティブ配列のラップ変換（プリミティブ配列 → ラッパークラス配列）
